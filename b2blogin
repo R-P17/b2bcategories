@@ -1,0 +1,14 @@
+<?php
+require_once($_SERVER['DOCUMENT_ROOT'] . '/wp-config.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/wp-load.php');
+global $wpdb;
+$user=$wpdb->get_results("
+SELECT wp_users.user_login, wp_usermeta.meta_value
+FROM `wp_users`
+INNER JOIN `wp_usermeta`
+ON wp_users.ID = wp_usermeta.user_id
+WHERE `meta_key` LIKE '%capabiliti%'
+AND `meta_value` LIKE '%subscribe%'
+");
+
+?>

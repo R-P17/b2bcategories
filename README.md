@@ -1,9 +1,11 @@
 IN PROGRESS
 
+
+== Description ==
+
 b2bcategories Wordpress Plugin
 It is a plugin, which when a customer selects the b2b category will ask him for username and password, in order to log in to the corresponding page and see the products contained in it
 
-== Description ==
 
 == Installation ==
 
